@@ -12,33 +12,33 @@
         <main>
             <h1>Text analzyer</h1>
             <p>Paste in text below, submit, and get some basic stats back.</p>
-            <form>
+            <form class="js-form">
                 <div>
                     <label for="user-text">Text to analyze</label>
-                    <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
+                    <textarea class="js-text" cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
                 </div>
                 <div>
                     <button type="submit">Analyze it!</button>
                 </div>
             </form>
 
-            <dl class="hidden text-report">
+            <dl class="hidden text-report js-report">
                 <dt>Word count</dt>
-                <dd></dd>
+                <dd class="js-report-word-count"></dd>
 
                 <dt>Unique word count</dt>
-                <dd></dd>
+                <dd class="js-report-unique-word-count"></dd>
 
                 <dt>Average word length</dt>
-                <dd></dd>
+                <dd class="js-report-average-word-length"></dd>
 
                 <dt>Average sentence length</dt>
-                <dd></dd>
+                <dd class="js-report-average-sentence-length"></dd>
             </dl>
         </main>
     </div>
 
-    <!-- link to jquery -->
-    <!-- link to your app.js -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
